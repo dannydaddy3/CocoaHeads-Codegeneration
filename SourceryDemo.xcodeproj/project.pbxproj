@@ -16,9 +16,8 @@
 		0F18A22E202B29AB0078E27D /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F18A22D202B29AB0078E27D /* Book.swift */; };
 		0F18A230202B29B60078E27D /* CopyrightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F18A22F202B29B60078E27D /* CopyrightInfo.swift */; };
 		0F18A238202B2E2D0078E27D /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F18A237202B2E2D0078E27D /* Genre.swift */; };
-		0FBF3813202C567D00049B16 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF3812202C567D00049B16 /* Models.swift */; };
-		0FBF3815202C670D00049B16 /* Intro.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 0FBF3814202C670D00049B16 /* Intro.stencil */; };
-		0FBF3817202C672F00049B16 /* Intro.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF3816202C672F00049B16 /* Intro.generated.swift */; };
+		0F20BBFC202CF2D80069ACC2 /* SwiftyJSONRepresentable.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 0F20BBFB202CF2D80069ACC2 /* SwiftyJSONRepresentable.stencil */; };
+		0F20BBFE202CF3E20069ACC2 /* BookWithBoilerplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F20BBFD202CF3E20069ACC2 /* BookWithBoilerplate.swift */; };
 		1D334F621CCEA79E07A62344 /* Pods_SourceryDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C67781FE037694270B3263 /* Pods_SourceryDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,9 +33,8 @@
 		0F18A22D202B29AB0078E27D /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		0F18A22F202B29B60078E27D /* CopyrightInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightInfo.swift; sourceTree = "<group>"; };
 		0F18A237202B2E2D0078E27D /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
-		0FBF3812202C567D00049B16 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		0FBF3814202C670D00049B16 /* Intro.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = Intro.stencil; sourceTree = "<group>"; };
-		0FBF3816202C672F00049B16 /* Intro.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intro.generated.swift; sourceTree = "<group>"; };
+		0F20BBFB202CF2D80069ACC2 /* SwiftyJSONRepresentable.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwiftyJSONRepresentable.stencil; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		0F20BBFD202CF3E20069ACC2 /* BookWithBoilerplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWithBoilerplate.swift; sourceTree = "<group>"; };
 		47C67781FE037694270B3263 /* Pods_SourceryDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SourceryDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B0BC58F2CAB6B82310934E /* Pods-SourceryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SourceryDemo/Pods-SourceryDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7E5B91E6A13158C8F9235E80 /* Pods-SourceryDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceryDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SourceryDemo/Pods-SourceryDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +78,7 @@
 				0F18A22C202B298E0078E27D /* Models */,
 				0F18A214202B28720078E27D /* AppDelegate.swift */,
 				0F18A216202B28720078E27D /* ViewController.swift */,
+				0F20BBFD202CF3E20069ACC2 /* BookWithBoilerplate.swift */,
 				0F18A218202B28720078E27D /* Main.storyboard */,
 				0F18A21B202B28720078E27D /* Assets.xcassets */,
 				0F18A21D202B28720078E27D /* LaunchScreen.storyboard */,
@@ -91,7 +90,7 @@
 		0F18A226202B295A0078E27D /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				0FBF3814202C670D00049B16 /* Intro.stencil */,
+				0F20BBFB202CF2D80069ACC2 /* SwiftyJSONRepresentable.stencil */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -107,11 +106,9 @@
 		0F18A22C202B298E0078E27D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0FBF3816202C672F00049B16 /* Intro.generated.swift */,
-				0FBF3812202C567D00049B16 /* Models.swift */,
 				0F18A237202B2E2D0078E27D /* Genre.swift */,
-				0F18A22D202B29AB0078E27D /* Book.swift */,
 				0F18A22F202B29B60078E27D /* CopyrightInfo.swift */,
+				0F18A22D202B29AB0078E27D /* Book.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,11 +192,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FBF3815202C670D00049B16 /* Intro.stencil in Resources */,
 				0F18A21F202B28720078E27D /* LaunchScreen.storyboard in Resources */,
 				0F18A229202B296A0078E27D /* SourceryGeneratorWatch.command in Resources */,
 				0F18A21C202B28720078E27D /* Assets.xcassets in Resources */,
 				0F18A21A202B28720078E27D /* Main.storyboard in Resources */,
+				0F20BBFC202CF2D80069ACC2 /* SwiftyJSONRepresentable.stencil in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +257,8 @@
 			files = (
 				0F18A217202B28720078E27D /* ViewController.swift in Sources */,
 				0F18A215202B28720078E27D /* AppDelegate.swift in Sources */,
+				0F20BBFE202CF3E20069ACC2 /* BookWithBoilerplate.swift in Sources */,
 				0F18A22E202B29AB0078E27D /* Book.swift in Sources */,
-				0FBF3813202C567D00049B16 /* Models.swift in Sources */,
-				0FBF3817202C672F00049B16 /* Intro.generated.swift in Sources */,
 				0F18A230202B29B60078E27D /* CopyrightInfo.swift in Sources */,
 				0F18A238202B2E2D0078E27D /* Genre.swift in Sources */,
 			);
