@@ -8,7 +8,7 @@ class BookWithBoilerplate {
     var description: String?
     var copyrightInfo: Copyright
     var quotes: [String]
-    var genre: Genre = .pop
+    var genre: Genre
     
     var isAvailableInStore = false
 
