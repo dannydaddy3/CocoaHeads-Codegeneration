@@ -1,0 +1,6 @@
+sources: 
+  - SourceryDemo/Models
+templates:
+  - Templates/
+output:
+  SourceryDemo/Models
