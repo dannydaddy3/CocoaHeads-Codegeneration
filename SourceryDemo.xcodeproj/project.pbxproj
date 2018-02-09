@@ -75,13 +75,8 @@
 		0F18A213202B28720078E27D /* SourceryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0F93C40D202E3FEB00B392C7 /* Supporting files */,
 				0F18A22C202B298E0078E27D /* Models */,
-				0F18A214202B28720078E27D /* AppDelegate.swift */,
-				0F18A216202B28720078E27D /* ViewController.swift */,
-				0F20BBFD202CF3E20069ACC2 /* BookWithBoilerplate.swift */,
-				0F18A218202B28720078E27D /* Main.storyboard */,
-				0F18A21B202B28720078E27D /* Assets.xcassets */,
-				0F18A21D202B28720078E27D /* LaunchScreen.storyboard */,
 				0F18A220202B28720078E27D /* Info.plist */,
 			);
 			path = SourceryDemo;
@@ -109,8 +104,21 @@
 				0F18A237202B2E2D0078E27D /* Genre.swift */,
 				0F18A22F202B29B60078E27D /* CopyrightInfo.swift */,
 				0F18A22D202B29AB0078E27D /* Book.swift */,
+				0F20BBFD202CF3E20069ACC2 /* BookWithBoilerplate.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0F93C40D202E3FEB00B392C7 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				0F18A214202B28720078E27D /* AppDelegate.swift */,
+				0F18A216202B28720078E27D /* ViewController.swift */,
+				0F18A218202B28720078E27D /* Main.storyboard */,
+				0F18A21B202B28720078E27D /* Assets.xcassets */,
+				0F18A21D202B28720078E27D /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 		3BB7F3AF7625BFA3C949E6BE /* Pods */ = {

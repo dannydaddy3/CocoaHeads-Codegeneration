@@ -1,6 +1,13 @@
 import Foundation
 import SwiftyJSON
 
+// 1. primitive types + snake_case
+// 2. optionals
+// 3. other types
+// 4. arrays
+// 5. enums
+// 6. ignore in json
+
 class BookWithBoilerplate {
     var name: String
     var pagesCount: Int

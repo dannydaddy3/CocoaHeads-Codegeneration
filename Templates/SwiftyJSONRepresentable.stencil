@@ -1,1 +1,17 @@
-
+{% for type in types.all|annotated:"SwiftyJSONRepresentable" %}
+// sourcery:inline:auto:{{ type.name }}.SwiftyJSONRepresentable
+    init(_ json: JSON) {
+        {% for variable in type.storedVariables where variable|!annotated:"skip" %}
+        {% if variable.type|annotated:"SwiftyJSONRepresentable" %}
+        {{ variable.name }} = {{ variable.unwrappedTypeName }}(json["{{ variable.name|camelToSnakeCase }}"])
+        {% elif variable.isArray %}
+        {{ variable.name }} = json["{{ variable.name|camelToSnakeCase }}"].arrayValue.map({{ variable.typeName.array.elementTypeName }}.init)
+        {% elif variable.type.kind == "enum" %}
+        {{ variable.name }} = {{ variable.unwrappedTypeName }}(rawValue: json["{{ variable.name|camelToSnakeCase }}"].stringValue) ?? {{ variable.defaultValue }}
+        {% else %}
+        {{ variable.name }} = json["{{ variable.name|camelToSnakeCase }}"].{{ variable.unwrappedTypeName|lowerFirstLetter }}{% ifnot variable.isOptional %}Value{% endif %}
+        {% endif %}
+        {% endfor %}
+    }
+// sourcery:end
+{% endfor %}
