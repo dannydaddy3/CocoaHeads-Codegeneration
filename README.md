@@ -1,2 +1,3 @@
-# SourceryDemo
-SourceryDemo for Cocoaheads Meetup
+# Codegeneration in Swift 
+
+Sourcery Demo + Slides
